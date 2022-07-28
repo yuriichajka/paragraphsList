@@ -98,7 +98,7 @@ export const ParagraphsList: React.FC = () => {
 
     return (
         <ParagraphListContainer>
-            {allData.map((paragraph: any, index: number) =>
+            {allData.map((paragraph: string, index: number) =>
                 <Paragraph key={index} data={paragraph} index={index} />
             )}
             <LoadMoreButton

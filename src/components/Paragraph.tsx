@@ -34,7 +34,12 @@ const ParagraphCard = styled.div`
   
 `;
 
-export const Paragraph = ({ data, index }: any) => {
+interface ParagraphProps {
+    data: string;
+    index: number;
+}
+
+export const Paragraph = ({ data, index }: ParagraphProps) => {
     const [isFull, setIsFull] = useState(false);
 
     return (
